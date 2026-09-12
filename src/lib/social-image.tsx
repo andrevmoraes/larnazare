@@ -62,7 +62,7 @@ export function SocialImageContent() {
           marginTop: 32,
         }}
       >
-        {ADDRESS_CITY} - {ADDRESS_STATE}
+        {`${ADDRESS_CITY} - ${ADDRESS_STATE}`}
       </div>
     </div>
   );
