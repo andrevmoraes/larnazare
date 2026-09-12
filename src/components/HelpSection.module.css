@@ -1,0 +1,114 @@
+.section {
+  padding: 6rem 0;
+  background-color: var(--color-primary-dark);
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #e0e0e0;
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  color: var(--color-text-main);
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary-dark);
+}
+
+.card p {
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.pixBox {
+  background-color: var(--color-bg-main);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--color-primary);
+}
+
+.pixBox strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-main);
+}
+
+.pixBox p {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.copyBtn {
+  padding: 0.6rem 1.25rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: 999px;
+  transition: background-color 0.2s ease;
+}
+
+.copyBtn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
