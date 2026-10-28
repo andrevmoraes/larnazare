@@ -1,5 +1,5 @@
 import styles from "./ContactSection.module.css";
-import { IconPin, IconPhone, IconClock } from "./icons";
+import { IconPin, IconPhone, IconClock, IconWhatsApp } from "./icons";
 import {
   ADDRESS_LINE_1,
   ADDRESS_LINE_2,
@@ -7,6 +7,8 @@ import {
   MAPS_EMBED_SRC,
   PHONE_DISPLAY,
   PHONE_TEL,
+  WHATSAPP_DISPLAY,
+  WHATSAPP_URL,
   VISIT_HOURS_LABEL,
   INSTAGRAM_URL,
   FACEBOOK_URL,
@@ -53,6 +55,21 @@ export default function ContactSection() {
             </div>
 
             <div className={styles.infoItem}>
+              <div className={styles.icon}><IconWhatsApp /></div>
+              <div>
+                <h3>WhatsApp</h3>
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.infoLink}
+                >
+                  <p>{WHATSAPP_DISPLAY}</p>
+                </a>
+              </div>
+            </div>
+
+            <div className={styles.infoItem}>
               <div className={styles.icon}><IconClock /></div>
               <div>
                 <h3>Horário de Visitas</h3>
@@ -61,6 +78,7 @@ export default function ContactSection() {
             </div>
 
             <div className={styles.socials}>
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>WhatsApp</a>
               <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>Instagram</a>
               <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className={styles.socialBtn}>Facebook</a>
             </div>

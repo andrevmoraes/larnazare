@@ -8,6 +8,8 @@ import {
   ADDRESS_LINE_2,
   PHONE_DISPLAY,
   PHONE_TEL,
+  WHATSAPP_DISPLAY,
+  WHATSAPP_URL,
   VISIT_HOURS_LABEL,
 } from "../lib/site-config";
 
@@ -28,6 +30,14 @@ export default function Footer() {
           <p>{ADDRESS_LINE_2}</p>
           <a href={`tel:${PHONE_TEL}`} className={styles.phoneLink}>
             Telefone: {PHONE_DISPLAY}
+          </a>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.phoneLink}
+          >
+            WhatsApp: {WHATSAPP_DISPLAY}
           </a>
         </div>
 

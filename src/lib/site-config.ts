@@ -3,6 +3,7 @@ export const SITE_URL = "https://larnazare.com.br";
 export const ORG_NAME = "Lar Espírita Maria de Nazaré";
 export const ORG_LEGAL_NAME = "Associação Espírita Jesus e Caridade";
 export const ORG_CNPJ = "44.935.253/0001-09";
+export const PIX_KEY = "52.780.673/0001-05";
 export const ORG_FOUNDING_YEAR = "1973";
 
 export const ADDRESS_LINE_1 = "Av. Nelson Patelli, 79 - Parque da Imprensa";
@@ -14,6 +15,10 @@ export const ADDRESS_FULL = `${ADDRESS_LINE_1}, ${ADDRESS_LINE_2}`;
 
 export const PHONE_DISPLAY = "(19) 3862-1448";
 export const PHONE_TEL = "+551938621448";
+
+export const WHATSAPP_DISPLAY = "(19) 99738-8850";
+export const WHATSAPP_NUMBER = "5519997388850";
+export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 export const VISIT_HOURS_LABEL = "Todos os dias, das 09h00 às 16h00";
 export const VISIT_HOURS_OPEN = "09:00";

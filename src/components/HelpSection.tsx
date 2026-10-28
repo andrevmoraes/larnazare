@@ -2,9 +2,7 @@
 
 import { useState } from "react";
 import styles from "./HelpSection.module.css";
-import { ORG_CNPJ } from "../lib/site-config";
-
-const PIX_KEY = ORG_CNPJ;
+import { PIX_KEY } from "../lib/site-config";
 
 export default function HelpSection() {
   const [copied, setCopied] = useState(false);
